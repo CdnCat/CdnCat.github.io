@@ -5,4 +5,5 @@
 layout: home
 ---
 
-Home page!
+hello world!
+hope you have a good day :)
