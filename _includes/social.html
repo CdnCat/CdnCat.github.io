@@ -62,11 +62,11 @@
         ></use></svg
     ></a>
   </li>
-  {%- endif -%} {%- if social.stackoverflow -%}
+  {%- endif -%} {%- if social.stackoverflow and social.stackoverflow_id -%}
   <li>
     <a
       rel="me"
-      href="https://stackoverflow.com/users/{{ social.stackoverflow | cgi_escape | escape }}"
+      href="https://stackoverflow.com/users/{{ social.stackoverflow_id | cgi_escape | escape }}/{{ social.stackoverflow | cgi_escape | escape }}"
       title="{{ social.stackoverflow | escape }}"
       ><svg class="svg-icon grey">
         <use
